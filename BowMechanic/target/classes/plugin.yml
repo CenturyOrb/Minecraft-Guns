@@ -1,0 +1,4 @@
+name: Bow Mechanic
+version: '1.0-SNAPSHOT'
+main: com.rosed.bowmechanic.BowMechanic
+api-version: '1.17'

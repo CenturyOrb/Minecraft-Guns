@@ -1,0 +1,4 @@
+name: Bow Mechanic
+version: '${project.version}'
+main: com.rosed.bowmechanic.BowMechanic
+api-version: '1.17'
