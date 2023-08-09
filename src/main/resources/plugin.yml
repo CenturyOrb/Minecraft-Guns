@@ -1,0 +1,4 @@
+name: Minecraft-Guns
+version: '${project.version}'
+main: com.rosed.minecraftguns.MinecraftGuns
+api-version: '1.17'
