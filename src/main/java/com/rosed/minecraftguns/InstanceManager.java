@@ -11,6 +11,7 @@ public enum InstanceManager {
     INSTANCE;
 
     private MinecraftGuns minecraftGuns;
+    private GunRegistry gunRegistry;
 
     /**
      *
@@ -29,7 +30,7 @@ public enum InstanceManager {
     private void register()   {
 
         // register managers
-        new GunRegistry();
+        gunRegistry = new GunRegistry();
         new GunRecipe();
 
         // register commands
