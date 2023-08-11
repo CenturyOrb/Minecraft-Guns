@@ -1,6 +1,7 @@
 package com.rosed.minecraftguns;
 
 import com.rosed.minecraftguns.instance.*;
+import com.rosed.minecraftguns.listener.ShootListener;
 import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -34,6 +35,7 @@ public enum InstanceManager {
         new GunRecipe();
 
         // register commands
+        Bukkit.getPluginManager().registerEvents(new ShootListener(), minecraftGuns);
 
         // register events
 
