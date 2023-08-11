@@ -1,0 +1,4 @@
+name: Minecraft-Guns
+version: '1.0-SNAPSHOT'
+main: com.rosed.minecraftguns.MinecraftGuns
+api-version: '1.17'

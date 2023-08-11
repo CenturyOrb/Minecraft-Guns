@@ -1,11 +1,11 @@
 package com.rosed.minecraftguns;
 
-import com.rosed.minecraftguns.instance.AmmunitionType;
-import com.rosed.minecraftguns.instance.Colt;
-import com.rosed.minecraftguns.instance.Gun;
+import com.rosed.minecraftguns.instance.*;
+import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 
+@Getter
 public enum InstanceManager {
 
     INSTANCE;
@@ -29,6 +29,8 @@ public enum InstanceManager {
     private void register()   {
 
         // register managers
+        new GunRegistry();
+        new GunRecipe();
 
         // register commands
 

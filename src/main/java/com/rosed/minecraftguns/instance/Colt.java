@@ -1,5 +1,14 @@
 package com.rosed.minecraftguns.instance;
 
+import com.rosed.minecraftguns.InstanceManager;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.ShapedRecipe;
+import org.bukkit.inventory.meta.ItemMeta;
+
 public class Colt extends Pistol {
 
     private static final int magSize = 32;
