@@ -7,6 +7,7 @@ public final class MinecraftGuns extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
+        InstanceManager.INSTANCE.start(this);
 
     }
 
