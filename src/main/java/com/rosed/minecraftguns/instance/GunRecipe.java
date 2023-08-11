@@ -9,6 +9,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GunRecipe {
 
     public GunRecipe()   {
@@ -22,6 +25,9 @@ public class GunRecipe {
         ItemStack colt = new ItemStack(Material.WOODEN_SHOVEL);
         ItemMeta coltMeta = colt.getItemMeta();
         coltMeta.setDisplayName(ChatColor.GRAY + "Colt");
+        List<String> coltLore = new ArrayList<>();
+        coltLore.add(ChatColor.GOLD + "Left to shoot:");
+        coltMeta.setLore(coltLore);
         // add item PDC
         colt.setItemMeta(coltMeta);
 
