@@ -17,8 +17,8 @@ public abstract class Gun {
 
     }
 
-    protected abstract void shoot(Player player);
+    public abstract void shoot(Player player);
 
-    protected abstract void reload(int currentAmmoCount);
+    public abstract void reload(int currentAmmoCount);
 
 }

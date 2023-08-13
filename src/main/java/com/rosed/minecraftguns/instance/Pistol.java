@@ -9,12 +9,12 @@ public class Pistol extends Gun {
     }
 
     @Override
-    protected void shoot(Player player) {
+    public void shoot(Player player) {
 
     }
 
     @Override
-    protected void reload(int currentAmmoCount) {
+    public void reload(int currentAmmoCount) {
 
     }
 

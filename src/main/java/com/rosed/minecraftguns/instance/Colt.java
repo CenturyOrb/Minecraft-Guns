@@ -5,6 +5,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -17,6 +18,13 @@ public class Colt extends Pistol {
 
     public Colt() {
         super(magSize, fireRate, ammunitionType);
+
+    }
+
+    @Override
+    public void shoot(Player player)   {
+
+        player.sendMessage("You have shot your colt");
 
     }
 
