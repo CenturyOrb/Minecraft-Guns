@@ -1,6 +1,7 @@
 package com.rosed.minecraftguns.instance;
 
 import com.rosed.minecraftguns.InstanceManager;
+import lombok.Getter;
 import org.bukkit.*;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Player;

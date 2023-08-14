@@ -38,6 +38,7 @@ public class GunRecipe {
         // add item PDC
         PersistentDataContainer data = coltMeta.getPersistentDataContainer();
         data.set(new NamespacedKey(minecraftGuns, "gunType"), PersistentDataType.STRING, "Colt");
+        data.set(new NamespacedKey(minecraftGuns, "magSize"), PersistentDataType.INTEGER, 32);
         colt.setItemMeta(coltMeta);
 
         ShapedRecipe coltRecipe = new ShapedRecipe(new NamespacedKey(InstanceManager.INSTANCE.getMinecraftGuns(), "Colt"), colt);
