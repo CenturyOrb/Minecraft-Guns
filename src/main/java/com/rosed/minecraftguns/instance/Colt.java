@@ -1,13 +1,10 @@
 package com.rosed.minecraftguns.instance;
 
+import com.rosed.minecraftguns.GunData;
 import com.rosed.minecraftguns.InstanceManager;
-import lombok.Getter;
 import org.bukkit.*;
-import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.ShapedRecipe;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
@@ -23,8 +20,14 @@ public class Colt extends Pistol {
     }
 
     @Override
-    public void shoot(Player player)   {
+    public void shoot(Player player, ItemStack item)   {
 
+        // check if the gun has ammo left
+        if (GunData.getGunAmmo(item) <= 0)   {
+            Gun.emptyShot(player);
+        }
+
+        GunData.decrementGunAmmo(item);
         player.sendMessage("You have shot your colt");
         spawnMovingParticleLine(player, Particle.FLAME, 10, 1, 3);
 

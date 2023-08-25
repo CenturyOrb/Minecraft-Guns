@@ -1,6 +1,7 @@
 package com.rosed.minecraftguns.instance;
 
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 
 public class Pistol extends Gun {
 
@@ -9,7 +10,7 @@ public class Pistol extends Gun {
     }
 
     @Override
-    public void shoot(Player player) {
+    public void shoot(Player player, ItemStack item) {
 
     }
 

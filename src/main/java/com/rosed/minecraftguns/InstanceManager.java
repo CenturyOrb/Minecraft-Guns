@@ -24,7 +24,6 @@ public enum InstanceManager {
         this.minecraftGuns = minecraftGuns;
 
         register();
-        Bukkit.broadcastMessage(ChatColor.GREEN + "MinecraftGuns Loaded");
 
     }
 
